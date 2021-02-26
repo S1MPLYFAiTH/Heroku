@@ -83,7 +83,6 @@ async function getInfo() {
         chartT.series[0].addPoint([x, y], true, false, true);
     }
     document.querySelector('#pressure').textContent = pressure;
-    document.querySelector('#temperature').textContent = temp;
     var x = (new Date()).getTime(),
         y = parseFloat(pressure);
     //console.log(this.responseText);
