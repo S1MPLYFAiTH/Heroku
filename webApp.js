@@ -7,7 +7,7 @@ $(function () {
 
 const github = document.querySelector('#source');
 github.addEventListener('click', () => {
-    location.href = "";
+    location.href = "https://github.com/S1MPLYFAiTH/Heroku";
 })
 
 const api_url = 'https://api.thingspeak.com/channels/1307599/feeds.json?api_key=WTA50CGKVHTTCRB4&results=1';
