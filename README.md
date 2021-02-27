@@ -1,5 +1,5 @@
 # Heroku_webApp
-Going to host this on heroku
+Hosted on heroku
 
 visit https://weatherapp77.herokuapp.com/
 
