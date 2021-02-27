@@ -10,7 +10,7 @@ github.addEventListener('click', () => {
     location.href = "https://github.com/S1MPLYFAiTH/Heroku";
 })
 
-const api_url = 'https://api.thingspeak.com/channels/1307599/feeds.json?api_key=WTA50CGKVHTTCRB4&results=1';
+const api_url = 'https://api.thingspeak.com/channels/1313863/feeds.json?api_key=QDQHE9S2WVJ5H021&results=1';
 
 var chartT = new Highcharts.Chart({
     chart: {
@@ -71,8 +71,12 @@ var chartP = new Highcharts.Chart({
 async function getInfo() {
     const response = await fetch(api_url);
     const data = await response.json();
-    const temp = data.feeds[0].field1;
-    const pressure = data.feeds[0].field2;
+    const temp = parseFloat(data.feeds[0].field1).toFixed(2);
+    const humi = parseFloat(data.feeds[0].field2).toFixed(0);
+    const pressure = parseFloat(data.feeds[0].field3).toFixed(2);
+    const temp1 = parseFloat(data.feeds[0].field1).toFixed(0);
+    document.querySelector('#temperature1').textContent = temp1;
+    document.querySelector('#humidity').textContent = humi;
     document.querySelector('#temperature').textContent = temp;
     var x = (new Date()).getTime(),
         y = parseFloat(temp);
@@ -91,6 +95,7 @@ async function getInfo() {
     } else {
         chartP.series[0].addPoint([x, y], true, false, true);
     }
+
 }
 getInfo();
 
