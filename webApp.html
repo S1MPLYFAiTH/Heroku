@@ -49,14 +49,27 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Location..." aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
 
-        <div class="heading">
-            <h1 class="text-center">BHUBANESWAR</h1>
+        <div class="container-fluid" id="stats">
+            <div class="temp">
+                <span id="temperature1">Temp</span>
+                <span class="units">&deg;C</span>
+            </div>
+            <div class="stat2">
+                <div id="humidity-stats">
+                    <span>Humidity: </span>
+                    <span id="humidity">Humidity</span>
+                    <span class="units">&#37;</span>
+                </div>
+                <div id="location-stats">
+                    <span>Bhubaneswar</span>
+                </div>
+            </div>
         </div>
         <div id="graphs" class="row justify-content-evenly ">
             <div class=" col-10 col-md-5 px-0 pb-2 " style=" box-shadow: 10px 10px 40px #0077b6;border-radius: 10px;">
@@ -65,7 +78,7 @@
                 <div class="text-center border border-dark bg-dark text-white">
                     <div class="ok1" style=" border-radius: 20px;">
                         <span>Temperature</span>
-                        <span id="temperature">%TEMP%</span>
+                        <span id="temperature">temp</span>
                         <span class="units">&deg;C</span>
                     </div>
                 </div>
@@ -76,7 +89,7 @@
                 <div class="text-center border border-dark bg-dark text-white">
                     <div class="ok2">
                         <span>Pressure</span>
-                        <span id="pressure">PRESSURE</span>
+                        <span id="pressure">Pressure</span>
                         <span class="units">mb</span>
                     </div>
                 </div>
@@ -84,42 +97,39 @@
         </div>
     </section>
 
-    <section id="sec-2">
-        <div class="author mt-5 mb-2 text-center display-4 ">
-            Author of the project
-        </div>
-        <div class="row" id="side">
-            <div class="col-12 col-md-4 my-2 my-md-5">
-                <div class="card-body"
-                    style="background-color:#0077b6; color: white;  box-shadow: 10px 10px 30px #0077b6; border-radius: 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/NIT_Rourkela_Colour_Logo.svg/1200px-NIT_Rourkela_Colour_Logo.svg.png"
-                        class="card-img-top" height="350px" width="50px" draggable="false">
-                    <h3 class="text-center">Deep Prabhat Tirkey</h3>
-                    <p class="text-center">Electronics and Instrumentation Engineering</p>
-                    <h6 class="text-center">National Institute of Technology Rourkela</h6>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 my-2 my-md-5 ">
-                <div class="card-body"
-                    style="background-color:#0077b6; color: white;  box-shadow: 10px 10px 30px #0077b6; border-radius: 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/NIT_Rourkela_Colour_Logo.svg/1200px-NIT_Rourkela_Colour_Logo.svg.png"
-                        class="card-img-top" height="350px" width="50px" draggable="false">
-                    <h3 class="text-center">Imran Wahid</h3>
-                    <p class="text-center">Electronics and Instrumentation Engineering</p>
-                    <h6 class="text-center">National Institute of Technology Rourkela</h6>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 my-2 my-md-5">
-                <div class="card-body mb-5"
-                    style="background-color:#0077b6; color: white;  box-shadow: 10px 10px 30px #0077b6; border-radius: 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/NIT_Rourkela_Colour_Logo.svg/1200px-NIT_Rourkela_Colour_Logo.svg.png"
-                        class="card-img-top" height="350px" width="50px" draggable="false">
-                    <h3 class="text-center">Debarun Das</h3>
-                    <p class="text-center">Electronics and Instrumentation Engineering</p>
-                    <h6 class="text-center">National Institute of Technology Rourkela</h6>
-                </div>
-            </div>
+    <div class="author mt-5 mb-4 mb-md-2 text-center display-4 ">
+        Author of the project
+    </div>
 
+    <section id="sec-2" class="container-fluid mt-4 mt-md-0">
+        <div class="row">
+            <div class="col-12 col-md-4 my-2 my-md-3">
+                <div class="card-body">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/NIT_Rourkela_Colour_Logo.svg/1200px-NIT_Rourkela_Colour_Logo.svg.png"
+                        class="card-img-top" height="350px" width="50px" draggable="false" style="margin-bottom: 0px;">
+                    <p class="text-center">Deep Prabhat Tirkey</p>
+                    <p class="text-center">Electronics and Instrumentation Engineering</p>
+                    <p class="text-center">National Institute of Technology Rourkela</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-2 my-md-3">
+                <div class="card-body">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/NIT_Rourkela_Colour_Logo.svg/1200px-NIT_Rourkela_Colour_Logo.svg.png"
+                        class="card-img-top" height="350px" width="50px" draggable="false">
+                    <p class="text-center">Imran Wahid</h3>
+                    <p class="text-center">Electronics and Instrumentation Engineering</p>
+                    <p class="text-center">National Institute of Technology Rourkela</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-2 my-md-3">
+                <div class="card-body mb-3 mb-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/NIT_Rourkela_Colour_Logo.svg/1200px-NIT_Rourkela_Colour_Logo.svg.png"
+                        class="card-img-top" height="350px" width="50px" draggable="false">
+                    <p class="text-center">Debarun Das</p>
+                    <p class="text-center">Electronics and Instrumentation Engineering</p>
+                    <p class="text-center">National Institute of Technology Rourkela</p>
+                </div>
+            </div>
             <button type="button" class="btn btn-secondary" id="source">Get the source code</button>
         </div>
     </section>
