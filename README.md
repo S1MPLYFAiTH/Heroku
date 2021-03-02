@@ -13,10 +13,10 @@
   - [BMP-180 Library](https://github.com/sparkfun/BMP180_Breakout_Arduino_Library)
   
 Refer arduino code for further information on hardware
-https://github.com/S1MPLYFAiTH/Heroku_webApp/tree/master/WebAppIno
-ESP8266 uploads sensor values to Thingspeak and Website retrives from thingspeak Read API.
+>https://github.com/S1MPLYFAiTH/Heroku_webApp/tree/master/WebAppIno
+>ESP8266 uploads sensor values to Thingspeak and Website retrives from thingspeak Read API.
 
 ### WebApp:-
-The frontend of website is made using HTML,CSS,Bootstrap and JS.
-The Backend of website is made using Flask.
+>The frontend of website is made using HTML,CSS,Bootstrap and JS.
+>The Backend of website is made using Flask.
 
