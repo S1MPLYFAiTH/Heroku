@@ -1,9 +1,8 @@
 # Heroku_webApp
-Hosted on heroku
 ===========================================
 
 # Quick links
-- [Hosted Website](https://weatherapp77.herokuapp.com/)
+- [Hosted on heroku](https://weatherapp77.herokuapp.com/)
 - [Thingspeak-github documentaion](https://github.com/mathworks/thingspeak-arduino)
 
 # How it works?
