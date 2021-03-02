@@ -6,17 +6,6 @@ Hosted on heroku
 - [Hosted Website](https://weatherapp77.herokuapp.com/)
 - [Thingspeak-github documentaion](https://github.com/mathworks/thingspeak-arduino)
 
-# Contents
-- Installing options:
-  - [Using Boards Manager](#installing-with-boards-manager)
-  - [Using git version](#using-git-version)
-  - [Using PlatformIO](#using-platformio)
-  - [Building with make](#building-with-make)
-- [Documentation](#documentation)
-- [Issues and support](#issues-and-support)
-- [Contributing](#contributing)  
-- [License and credits](#license-and-credits)   
-
 # How it works?
 
 ### Hardware:-
